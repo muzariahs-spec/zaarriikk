@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Buku Perpustakaan</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+    <h1>📚 Data Buku Perpustakaan</h1>
+</header>
+
+<section class="form-section">
+    <h2>Tambah Buku</h2>
+    <input type="text" id="judul" placeholder="Judul Buku">
+    <input type="text" id="penulis" placeholder="Penulis">
+    <input type="number" id="tahun" placeholder="Tahun Terbit">
+    <button onclick="tambahBuku()">Tambah</button>
+</section>
+
+<section class="table-section">
+    <h2>Daftar Buku</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Judul</th>
+                <th>Penulis</th>
+                <th>Tahun</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
